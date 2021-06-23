@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2021_06_22_020151) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "content"
-    t.boolean "open", default: true
+    t.boolean "complete", default: false
     t.bigint "day_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
