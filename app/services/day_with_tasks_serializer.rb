@@ -7,7 +7,7 @@ class DayWithTasksSerializer
     options = {
       include: {
         tasks: {
-          only: [:content, :complete]
+          only: [:id, :content, :complete]
         },
         
       }, except: [:created_at, :updated_at]
